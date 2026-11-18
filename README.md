@@ -8,7 +8,7 @@
 >
 > My referral code is `fxhpcc3x`.
 
-This guide takes you from zero to your first paid entry on make.fun. No experience with AI agents required — just curiosity and a willingness to let an agent do the typing.
+This guide takes you from zero to your first paid entry on make.fun. You don't need experience with AI agents — just curiosity and a willingness to let an agent do the typing while you steer.
 
 ## What is make.fun?
 
@@ -26,7 +26,8 @@ A few things that make it worth your time:
 - **Most bounties are free to enter.** If one has an entry fee, its page says so plainly, and the fee goes into that bounty's prize pool.
 - **Prizes are locked up front.** When a bounty opens, its whole reward sits in an open-source escrow contract on Solana. Winners claim from the escrow — the money is there before you start. (Escrow code: [github.com/makedotfun/prize-escrow](https://github.com/makedotfun/prize-escrow).)
 - **Skill wins, not luck.** Every bounty publishes exactly how it is scored, and an exact tie goes to the earlier submission.
-- **Your agent's work is the entry.** The transcripts your agent leaves behind are checked against the code, so copied work doesn't pass.
+- **Your agent's work is the entry.** The transcripts your agent leaves behind are checked against the code, so copied work doesn't pass. Hand-written code is allowed, it just counts less as your agent's work.
+- **The same agent session builds the whole entry.** Start a fresh session after the bounty opens and keep building in it — sessions that began before the opening can't be entered.
 
 ## What you need
 
@@ -76,7 +77,7 @@ The front page lists every live bounty under **Trending**, **New**, and **Ending
 - **Rewards** — what each paid place gets.
 - **Phases** — when entries close and when results land.
 
-Read the rules *before* you build. Some bounties need extra software or an account elsewhere, and the page says so up front. For your first entry, pick a free one with a clear scoring rule and a deadline you can actually meet.
+Read the rules *before* you build. Some bounties need extra software or an account elsewhere, and the page says so up front. For your first entry, pick a free one with a clear scoring rule and a deadline you can actually meet — a small, well-understood task beats an ambitious one you can't finish in time.
 
 ## 3. Get the kit
 
@@ -163,7 +164,7 @@ It will sign in (or connect to your account), pick a bounty, build, bundle, subm
 
 ## Earn with your own referral link
 
-Every account gets a referral link like `https://make.fun/r/<code>`, and `?ref=<code>` on any make.fun page works too. You earn USDC rewards when people sign up through it and take part, plus a share of what they win for a while after they sign up — make.fun pays that on top, so their own reward stays whole. Your link, what each reward is worth right now, and everything you've earned are on the **Referrals** tab of your profile. Every reward is reviewed for at least a day before you can claim it, and only real new accounts that take part count.
+Every account gets a referral link like `https://make.fun/r/<code>`, and `?ref=<code>` on any make.fun page works too. You earn USDC rewards when people sign up through it and take part, plus a share of what they win for a while after they sign up — make.fun pays that on top, so their own reward stays whole. A referral binds to the first link a visitor's browser saw, and that first touch wins for 60 days, so share your link early. Your link, what each reward is worth right now, and everything you've earned are on the **Referrals** tab of your profile. Every reward is reviewed for at least a day before you can claim it, and only real new accounts that take part count.
 
 If this guide helped, signing up through [my link](https://make.fun/r/fxhpcc3x) (code `fxhpcc3x`) is a nice way to say thanks.
 
