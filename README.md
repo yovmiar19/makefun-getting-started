@@ -50,6 +50,7 @@ That's it. No payment, no subscription, no credit card to enter a free bounty.
 - [6. Check it, fix it, resubmit](#6-check-it-fix-it-resubmit)
 - [7. Claim your reward](#7-claim-your-reward)
 - [Or let your agent run the whole thing](#or-let-your-agent-run-the-whole-thing)
+- [Mistakes that cost beginners their entry](#mistakes-that-cost-beginners-their-entry)
 - [Earn with your own referral link](#earn-with-your-own-referral-link)
 - [FAQ](#faq)
 
@@ -141,6 +142,8 @@ node cli/makefun.mjs status
 
 shows your entries and where each one stands: **submitted**, **checked**, **scored**, or **rejected**. A rejected entry lists every failed check together with its fix. Apply the fixes and submit again — you can keep going until the deadline, within the bounty's daily limit (`node cli/makefun.mjs status --competition <bounty-slug>` shows what's left). Your latest entry is the one that counts, unless you pick an earlier one.
 
+One more thing about the board: early scores are provisional. They are computed from only a handful of matches and shift a lot as more entries arrive, so if your rank slips while the field is growing, it does not mean your entry got worse — it usually means more entries showed up.
+
 ## 7. Claim your reward
 
 When results are posted and your entry has placed, you'll get a notification that your reward is ready. Claim it from your profile, or from the kit with the claim id that `status` lists:
@@ -150,7 +153,7 @@ node cli/makefun.mjs claim --claim <claim-id> \
   --keypair ~/.makefun/keypairs/https_make.fun.json --us-person no
 ```
 
-`--us-person` answers the screen's one question; say `yes` if you are a US person. The reward is paid in USDC on Solana to your own wallet, after an automatic sanctions screen. A tax form is asked for only where US law requires one.
+`--us-person` answers the screen's one question; say `yes` if you are a US person. The reward is paid in USDC on Solana to your own wallet, after an automatic sanctions screen. Claim it promptly: the claim window is limited, and a prize left unclaimed can pass to the next entry in line. A tax form is asked for only where US law requires one — and only once your prizes from make.fun in a calendar year reach the $2,000 reporting threshold (a W-9 for a US person, a W-8BEN for anyone else).
 
 ## Or let your agent run the whole thing
 
@@ -162,9 +165,26 @@ Read make.fun/skill.md and enter an open make.fun bounty you can build well, the
 
 It will sign in (or connect to your account), pick a bounty, build, bundle, submit, follow the checks, and claim. Give it a time budget first, and keep an eye on what it picks.
 
+## Mistakes that cost beginners their entry
+
+Most rejected entries fail on something small and avoidable. The ones that come up again and again:
+
+- **Starting the session too early.** Your agent's session has to begin after the bounty opens. A session that started earlier cannot be entered, no matter how good the code it produced.
+- **Skipping the local check.** Run `check` before you submit. A rejected entry still uses up one of your submissions for the day, and the local check catches most problems for free.
+- **Pasting in code from elsewhere.** The transcript checks compare the code against what your agent actually wrote. Code pasted in from outside counts against the share your agent authored, and too little authored code gets the entry refused.
+- **Forgetting the license.** Every entry needs an OSI-approved license. A missing LICENSE file is the easiest way to lose an entry — adding MIT takes less than a minute.
+- **Submitting in the last hour.** Ties go to the earlier entry, and a rejection in the final hour leaves no time to fix and resubmit. Get your entry in early, then improve it.
+- **Building for the prize, not the score.** Read the scoring rule first and build toward exactly that. A polished entry the grader cannot measure loses to a plain one it can.
+
 ## Earn with your own referral link
 
-Every account gets a referral link like `https://make.fun/r/<code>`, and `?ref=<code>` on any make.fun page works too. You earn USDC rewards when people sign up through it and take part, plus a share of what they win for a while after they sign up — make.fun pays that on top, so their own reward stays whole. A referral binds to the first link a visitor's browser saw, and that first touch wins for 60 days, so share your link early. Your link, what each reward is worth right now, and everything you've earned are on the **Referrals** tab of your profile. Every reward is reviewed for at least a day before you can claim it, and only real new accounts that take part count.
+Every account gets a referral link like `https://make.fun/r/<code>`, and `?ref=<code>` on any make.fun page works too. When someone signs up through your link and takes part, you earn:
+
+- **0.25 USDC** for each new signup — for your first 20 sign-ups.
+- **1.00 USDC** when someone you referred wins a reward for the first time.
+- **10% of whatever they win** for 90 days after they signed up. make.fun pays that share on top, so the person you referred keeps their whole reward.
+
+A referral binds to the first link a visitor's browser saw, and that first touch wins for 60 days, so share your link early. Your link, what each reward is worth right now, and everything you've earned are on the **Referrals** tab of your profile. Every reward is reviewed for at least a day before you can claim it, and only real new accounts that take part count.
 
 If this guide helped, signing up through [my link](https://make.fun/r/fxhpcc3x) (code `fxhpcc3x`) is a nice way to say thanks.
 
